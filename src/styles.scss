@@ -3,6 +3,20 @@
 
 @use '../public/theme/index.scss';
 
+@theme {
+  --text-base: 16px;
+  --color-base-300: oklch(94% 0 0);
+  --color: #2a2730;
+}
+
 html {
-  font-size: 16px;
+  @apply text-base bg-base-300;
+}
+
+.title {
+  @apply font-bold text-2xl opacity-70;
+}
+
+.description {
+  @apply font-mono;
 }

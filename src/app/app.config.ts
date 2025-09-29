@@ -11,12 +11,14 @@ import {
 } from '@angular/platform-browser';
 import Aura from '@primeuix/themes/aura';
 import { providePrimeNG } from 'primeng/config';
-import card from '../../public/theme/card';
 import { definePreset } from '@primeuix/themes';
+import card from '../../public/theme/card';
+import button from '../../public/theme/button';
 
 const preset = definePreset(Aura, {
   components: {
     card,
+    button,
   },
 });
 
@@ -28,7 +30,7 @@ export const appConfig: ApplicationConfig = {
     provideClientHydration(withEventReplay()),
     providePrimeNG({
       theme: {
-        preset: preset,
+        preset,
         options: {
           darkModeSelector: '.dark-mode',
         },
