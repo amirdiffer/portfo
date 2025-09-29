@@ -5,6 +5,7 @@ import {
 
 export const root: CardTokenSections.Root = {
   borderRadius: '0.5rem',
+  shadow: 'none',
 };
 
 export const body: CardTokenSections.Body = {
