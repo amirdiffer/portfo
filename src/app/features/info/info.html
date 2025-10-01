@@ -1,1 +1,11 @@
-<p-card>info</p-card>
+<p-card>
+  @for (item of bio; track item) {
+  <div class="flex items-center py-3 px-1">
+    <div class="flex items-center gap-x-2 grow font-medium">
+      <i class="{{item.icon}}"></i>
+      <span>{{item.title}}:</span>
+    </div>
+    <span>{{item.value}}</span>
+  </div>
+  }
+</p-card>
