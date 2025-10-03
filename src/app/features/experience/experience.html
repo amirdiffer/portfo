@@ -1,1 +1,12 @@
-<p-card>experience</p-card>
+<p-card>
+  <span class="title ml-2">Experience</span>
+  <p-timeline [value]="experiences.reverse()" align="left" class="mt-6 ml-3">
+    <ng-template #content let-event>
+      <div class="flex flex-col">
+        <span class="text-xs">{{event.from}}</span>
+        <span class="font-semibold">{{event.position}}</span>
+        <span class="font-normal">{{event.company}}</span>
+      </div>
+    </ng-template>
+  </p-timeline>
+</p-card>

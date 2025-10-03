@@ -15,12 +15,14 @@ import { definePreset } from '@primeuix/themes';
 import card from '../theme/p-theme/properties/card';
 import button from '../theme/p-theme/properties/button';
 import chip from '../theme/p-theme/properties/chip';
+import timeline from '../theme/p-theme/properties/timeline';
 
 const preset = definePreset(Aura, {
   components: {
     card,
     button,
-    chip
+    chip,
+    timeline,
   },
 });
 
