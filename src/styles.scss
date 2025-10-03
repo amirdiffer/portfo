@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'tailwindcss';
-@use '../public/theme/index.scss';
+@use 'theme/index.scss';
 @import 'primeicons/primeicons.css';
 
 @theme {
@@ -10,13 +10,6 @@
 }
 
 html {
-  @apply text-base bg-base-300;
-}
-
-.title {
-  @apply font-bold text-2xl opacity-70;
-}
-
-.description {
-  @apply font-mono;
+  font-size: 16px;
+  background-color: oklch(94% 0 0);
 }
