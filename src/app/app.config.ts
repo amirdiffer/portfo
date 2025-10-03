@@ -12,13 +12,15 @@ import {
 import Aura from '@primeuix/themes/aura';
 import { providePrimeNG } from 'primeng/config';
 import { definePreset } from '@primeuix/themes';
-import card from '../../public/theme/card';
-import button from '../../public/theme/button';
+import card from '../theme/p-theme/properties/card';
+import button from '../theme/p-theme/properties/button';
+import chip from '../theme/p-theme/properties/chip';
 
 const preset = definePreset(Aura, {
   components: {
     card,
     button,
+    chip
   },
 });
 

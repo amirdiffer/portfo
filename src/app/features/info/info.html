@@ -1,11 +1,14 @@
 <p-card>
-  @for (item of bio; track item) {
-  <div class="flex items-center py-3 px-1">
-    <div class="flex items-center gap-x-2 grow font-medium">
-      <i class="{{item.icon}}"></i>
-      <span>{{item.title}}:</span>
+  <span class="title ml-2">Bio</span>
+  <div class="mt-3">
+    @for (item of bio; track item) {
+    <div class="flex items-center py-3 px-1">
+      <div class="flex items-center gap-x-2 grow font-medium">
+        <i class="{{item.icon}}"></i>
+        <span>{{item.title}}:</span>
+      </div>
+      <span>{{item.value}}</span>
     </div>
-    <span>{{item.value}}</span>
+    }
   </div>
-  }
 </p-card>
