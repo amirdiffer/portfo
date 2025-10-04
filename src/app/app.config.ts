@@ -16,6 +16,7 @@ import card from '../theme/p-theme/properties/card';
 import button from '../theme/p-theme/properties/button';
 import chip from '../theme/p-theme/properties/chip';
 import timeline from '../theme/p-theme/properties/timeline';
+import { provideHttpClient } from '@angular/common/http';
 
 const preset = definePreset(Aura, {
   components: {
@@ -32,6 +33,7 @@ export const appConfig: ApplicationConfig = {
     provideZonelessChangeDetection(),
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
+    provideHttpClient(),
     providePrimeNG({
       theme: {
         preset,
