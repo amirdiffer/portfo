@@ -12,10 +12,9 @@ import { NgClass } from '@angular/common';
 export class Projects {
   items: Project[] = [
     {
-      name: 'Next Top Tech (Top Change)',
+      name: 'Next Top Tech',
       description:
-        'Development and maintenance of Top Change (TC) the wallet for\n' +
-        'fiat and crypto.\n' +
+        'Development and maintenance of Bacart the gift card and voucher store.' +
         'The platform is built to provide means to exchange and transfer fiat\n' +
         'money and crypto easier around the world.\n' +
         'In frontend we used Angular version 18 and then upgraded 19.',

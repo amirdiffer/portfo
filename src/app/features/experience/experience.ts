@@ -34,7 +34,7 @@ export class Experience {
     {
       from: 'April 2024 - Present',
       position: 'Senior Frontend Developer',
-      company: 'Next Top Tech (TopChange)',
+      company: 'Next Top Tech',
     },
   ];
 }

@@ -9,12 +9,16 @@
         <div>
           <img class="rounded" [src]="post.thumbnail" />
           <p class="font-bold opacity-80 mt-6">{{post.name}}</p>
-          <div class="subtitle mt-6 flex gap-2">
-            <span>Published</span>
-            <span>{{post.createdAt}}</span>
-            <span>.</span>
-            <span>{{post.timeToRead}}</span>
-            <span>Read</span>
+          <div class="subtitle mt-6 grid grid-cols-1 xl:grid-cols-2 w-max">
+            <div class="col-span-1 space-x-1">
+              <span>Published</span>
+              <span>{{post.createdAt}}</span>
+              <span class="invisible xl:visible mr-2">.</span>
+            </div>
+            <div class="col-span-1 space-x-1 text-left">
+              <span>{{post.timeToRead}}</span>
+              <span>Read</span>
+            </div>
           </div>
           <div class="mt-6">
             <a pButton outlined [href]="post.mediumLink" target="_blank">
