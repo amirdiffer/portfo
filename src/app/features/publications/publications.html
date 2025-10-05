@@ -4,9 +4,9 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 mt-6">
       @for (post of items; track post) {
       <div
-        class="col-span-1 flex justify-center bg-white rounded-xl m-2 p-8 cursor-pointer text-center"
+        class="col-span-1 flex justify-center bg-white rounded-xl m-2 p-8 text-center"
       >
-        <a [href]="post.mediumLink" target="_blank">
+        <div>
           <img class="rounded" [src]="post.thumbnail" />
           <p class="font-bold opacity-80 mt-6">{{post.name}}</p>
           <div class="subtitle mt-6 flex gap-2">
@@ -16,7 +16,12 @@
             <span>{{post.timeToRead}}</span>
             <span>Read</span>
           </div>
-        </a>
+          <div class="mt-6">
+            <a pButton outlined [href]="post.mediumLink" target="_blank">
+              <span>Open in Medium</span>
+            </a>
+          </div>
+        </div>
       </div>
       }
     </div>

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { Card } from 'primeng/card';
 import Publication from './models/publication.model';
+import { ButtonDirective } from 'primeng/button';
 
 @Component({
   selector: 'app-publications',
   templateUrl: './publications.html',
   styleUrl: './publications.scss',
-  imports: [Card],
+  imports: [Card, ButtonDirective],
 })
 export class Publications {
   items: Publication[] = [
