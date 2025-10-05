@@ -5,11 +5,20 @@ import { TechStack } from './features/tech-stack/tech-stack';
 import { Experience } from './features/experience/experience';
 import { Projects } from './features/projects/projects';
 import { Publications } from './features/publications/publications';
+import { Footer } from './features/footer/footer';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.scss',
-  imports: [Profile, Info, TechStack, Experience, Projects, Publications],
+  imports: [
+    Profile,
+    Info,
+    TechStack,
+    Experience,
+    Projects,
+    Publications,
+    Footer,
+  ],
 })
 export class App {}
